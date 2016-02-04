@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<info>
+	<id>music</id>
+	<name>Music</name>
+	<description>Music player and server for ownCloud</description>
+	<licence>AGPLv3</licence>
+	<author>Morris Jobke, Jan-Christoph Borchardt (design)</author>
+	<version>0.3.8</version>
+	<require>7</require>
+	<types>
+		<!-- update metadata cache when create/update/delete a file -->
+		<filesystem/>
+	</types>
+	<ocsid>164319</ocsid>
+</info>

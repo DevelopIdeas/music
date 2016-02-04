@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+lang_map = ja_JP: ja
+
+[owncloud.music]
+file_filter = <lang>/music.po
+source_file = templates/music.pot
+source_lang = en
+type = PO

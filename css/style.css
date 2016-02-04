@@ -1,0 +1,224 @@
+/**
+ * ownCloud - Music app
+ *
+ * This file is licensed under the Affero General Public License version 3 or
+ * later. See the COPYING file.
+ *
+ * @author Morris Jobke <hey@morrisjobke.de>
+ * @copyright Morris Jobke 2013, 2014
+ */
+
+#notification a {
+	text-decoration: underline;
+}
+
+/* angular JS wrapper for main controller */
+#app > div {
+	width: 100%;
+	height: 100%;
+}
+
+#app-view {
+	height: 100%;
+	padding-right: 50px;
+}
+
+#app-view.started {
+	padding-top: 65px;
+}
+
+.play {
+	display: none;
+	/* opacity */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity = 70);
+	opacity: .7;
+}
+
+.artist-area {
+	clear: both;
+	padding-top: 15px;
+}
+
+.artist-area > h1 {
+	margin-left: 28px;
+	font-size: 34px;
+	line-height: 36px;
+}
+
+.artist-area > h1:hover {
+	cursor: pointer;
+}
+
+.artist-area > h1:hover > .play {
+	display: inline;
+	margin-bottom: 2px;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+}
+
+
+.album-area {
+	padding: 14px 28px;
+	width: 480px;
+	float: left;
+}
+
+.album-area > h2 {
+	font-size: 21px;
+	padding-bottom: 21px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.album-area > h2 > div {
+	display: inline-block;
+}
+
+.album-area > h2:hover {
+	cursor: pointer;
+}
+
+.albumart {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.album-area > .albumart,
+.album-area > img {
+	float: left;
+	width: 190px;
+	height: 190px;
+	line-height: 190px;
+	font-size: 105px;
+}
+
+.album-area > img.overlay {
+	margin-left: -190px;
+	padding: 46px;
+}
+
+.album-area:hover > img.overlay {
+	display: inline;
+	cursor: pointer;
+}
+
+.track-list {
+	margin-left: 195px;
+}
+
+.track-list > li {
+	padding-left: 21px;
+	padding-bottom: 11px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.track-list > li:hover {
+	cursor: pointer;
+}
+
+.track-list > li > .play.playing,
+.track-list > li:hover > .play {
+	display: inline;
+	height: 10px;
+	margin-left: -19px;
+	margin-right: 6px;
+}
+
+.muted {
+	/* opacity */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity = 50);
+	opacity: .5;
+}
+
+.alphabet-navigation {
+	z-index: 5;
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	width: 50px;
+	text-align: center;
+}
+
+.alphabet-navigation a {
+	display: block;
+	font-weight: bold;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity = 10);
+	opacity: .1;
+}
+
+.alphabet-navigation a.available {
+	display: block;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity = 40);
+	opacity: .4;
+}
+
+.alphabet-navigation a.available:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity = 80);
+	opacity: .8;
+}
+
+.alphabet-navigation a.filler.dotted:before
+{
+	content: "\00b7";
+}
+
+.alphabet-navigation a.filler.dotted > span.letter-content
+{
+	display: none;
+}
+
+.alphabet-navigation a.filler.stripped
+{
+	display: none;
+}
+
+.clickable, .clickable * {
+	cursor: pointer;
+}
+
+#scanning, #toScan {
+	font-size: 21px;
+	font-weight: bold;
+	color: #888;
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 100;
+}
+
+#updateData {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	bottom: 0;
+	left: 0;
+	z-index: 101;
+	background-color: rgba(255,255,255,0.5);
+
+	/* opacity */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity = 40);
+	opacity: .4;
+}
+
+#updateData:hover, #updateData:focus {
+	/* opacity */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity = 100);
+	opacity: 1;
+}
